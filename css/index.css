@@ -1,0 +1,58 @@
+body {
+  background-color: #f8f7f4;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+@keyframes badge-color-cycle {
+  0% {
+    background-color: #ffda79;
+  }
+
+  25% {
+    background-color: #ffabe7;
+  }
+
+  50% {
+    background-color: #d2bcf3;
+  }
+
+  75% {
+    background-color: #edf3d8;
+  }
+
+  100% {
+    background-color: #ffda79;
+  }
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 96px 1fr;
+  grid-template-rows: 100px;
+  align-items: center;
+  gap: 24px;
+  padding: 0 40px;
+}
+
+.header-navlist {
+  display: flex;
+  padding: 0 calc(32px / 2);
+}
+
+.body-badge {
+  display: inline-block;
+  min-height: 40px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 999999999px;
+  animation: badge-color-cycle 32s linear infinite;
+}
