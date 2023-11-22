@@ -204,10 +204,12 @@ a {
   position: absolute;
   top: 0;
   z-index: -1;
-  width: 272px;
-  height: 340px;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.hero-marquee-item__media-bg {
+  height: 100%;
 }
 
 .hero-marquee-item__info {
